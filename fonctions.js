@@ -13,10 +13,10 @@ console.log("1, 5, 2 => " + max);
 // 2) Ecrire une fonction qui retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).
 
 function getRandomInt(min, max) {
-    return Math.random() + min * (max - min);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-for (let i = 0; 1 < 10; i++) {
+for (let i = 0; i < 10; i++) {
     console.log(getRandomInt(1, 6));
 }
 
@@ -28,13 +28,21 @@ for (let i = 0; 1 < 10; i++) {
 // compareB(8, '8'); // false
 // compareB(8, 'huit'); // false
 
-function compareA() {
 
+function compareA(a, b) {
+    return a == b;
 }
 
+function compareB(a, b) {
+    return a === b;
+}
 
+console.log(compareA(4, '4'));      // true
+console.log(compareA(4.0, '4'));    // true
+console.log(compareA(4, 'quatre')); // false
 
-
+console.log(compareB(8, '8'));       // false
+console.log(compareB(8, 'huit'));    // false
 
 
 
