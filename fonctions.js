@@ -8,8 +8,17 @@ function HighestVal(a, b, c) {
 }
 
 const max = HighestVal(1, 5, 2);
-console.log(max);
+console.log("1, 5, 2 => " + max);
 
+// 2) Ecrire une fonction qui retourne un nombre entier pseudo-aléatoire entre une borne inférieure et une borne supérieure (bornes entières et comprises dans l'intervalle).
+
+function getRandomInt(min, max) {
+    return Math.random() + min * (max - min);
+}
+
+for (let i = 0; 1 < 10; i++) {
+    console.log(getRandomInt(1, 6));
+}
 
 // 3) Ecrire deux fonctions compareA et compareB qui retournent les mêmes résultats que dans les exemples suivant:
 // compareA(4, '4'); // true 
