@@ -220,4 +220,4 @@ const sayHello = createGreeting('Hello');
 const sayWelcome = createGreeting('Welcome');
 
 sayHello('Ada');     // "Hello Ada !"
-sayWelcome('Linus'); // "Welcome Linus !"
+sayWelcome('Linus'); // "Welcome Linus !"  
